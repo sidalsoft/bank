@@ -22,3 +22,18 @@ type Card struct {
 	Name     string
 	Active   bool
 }
+
+type Category string
+
+// Payment provides information about the payment
+type Payment struct {
+	ID       int
+	Amount   Money
+	Category Category
+}
+
+type PaymentSource struct {
+	Type    string // 'card'
+	Number  string // номер вида '5058 xxxx xxxx 8888'
+	Balance Money  // баланс в дирамах
+}
