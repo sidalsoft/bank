@@ -1,3 +1,3 @@
-module github.com/sidalsoft/bank/v2
+module github.com/sidalsoft/bank
 
 go 1.16
